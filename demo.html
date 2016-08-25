@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>EmaCrypt demo</title>
+</head>
+<body>
+<h1>EmaCrypt demo</h1>
+
+<p>
+	Contact our demo company:<br />
+	<br />
+	<b>Robert Te-Hiro</b> CEO<br />
+	<email val="JzQnOWInMyc0JzUuJzUnMy1oJzgnNCc5QGQnM20nOS5jJzk=">first.last@demo.co</email><br />
+	<br />
+	<b>Julie Ruperts</b> Manager<br />
+	<email val="aic3bCc4JzMuJzQnNycwJzMnNCc1c0BkJzNtJzkuYyc5">julie dot ruperts at demo dot co</email><br />
+	<br />
+	Or just send a message to <email val="JzInOHphJzRkQGQnM20nOS5jJzk=">wizard's email</email> if you want to contact our guru ;)
+</p>
+<p>
+	<b>Look at the source code. You won't find these emails there ;)</b>
+</p>
+
+<hr />
+<h2>Encrypt emails</h2>
+<p>
+	<input type="text" id="ecEmail" placeholder="demo@email.com">
+	<input type="submit" id="encrypt" value="Encrypt"><br /><br />
+	Crypted email: <span id="ecResult">JzVlJzBvQGUnMGFpJzguY28nMA==</span>
+</p>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="jquery.EmaCrypt.js"></script>
+<script>
+	$("#encrypt").click(function() {
+		var email = $("#ecEmail").val();
+		$.ajax({
+			type: "GET",
+			url: "/ajaxEmaCrypt.php",
+			data: { email: email },
+			timeout: 3000,
+			success: function(data) {
+					$("#ecResult").html(data);
+			}
+		});
+	});
+</script>
+</body>
+</html>
