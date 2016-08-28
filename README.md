@@ -30,7 +30,7 @@ Two files ```ajaxEmaCrypt.php```and ```jquery.emacrypt.js```.
 
 First, encrypt an email address:
 
-```ajaxEmaCrypt.php?email=demo@email.com``` or using *demo.html*
+```ajaxEmaCrypt.php?email=demo@email.com``` or use tool in *demo.html* file.
 
 You will get an address encrypted to this *ZCczbSc5QCczbWEnOGwuYyc5bQ==*.
 
