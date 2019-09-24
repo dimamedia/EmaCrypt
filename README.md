@@ -34,9 +34,9 @@ First, encrypt an email address:
 
 You will get an address encrypted to this *ZCczbSc5QCczbWEnOGwuYyc5bQ==*.
 
-Put it in *<email>* tag:
+Put it in `<email>` tag:
 
-```<email val="ZCczbSc5QCczbWEnOGwuYyc5bQ=="></email>````
+```<email val="ZCczbSc5QCczbWEnOGwuYyc5bQ=="></email>```
 
 Or with an alternative text:
 
